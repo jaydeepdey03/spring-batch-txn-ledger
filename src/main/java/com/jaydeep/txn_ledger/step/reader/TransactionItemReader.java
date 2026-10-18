@@ -18,7 +18,7 @@ public class TransactionItemReader {
     private Resource inputFile;
 
     @Bean
-    public ItemReader<TransactionCsvRow> transactionItemReader() {
+    public ItemReader<TransactionCsvRow> transactionCsvItemReader() {
         FlatFileItemReaderBuilder<TransactionCsvRow> reader = new FlatFileItemReaderBuilder<TransactionCsvRow>();
 
         reader.resource(inputFile);

@@ -23,7 +23,7 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.springframework.boot:spring-boot-starter-validation")
 	implementation("org.springframework.boot:spring-boot-starter-webmvc")
-	runtimeOnly("com.h2database:h2")
+	implementation("com.h2database:h2")
 	runtimeOnly("org.postgresql:postgresql")
 	testImplementation("org.springframework.boot:spring-boot-starter-batch-test")
 	testImplementation("org.springframework.boot:spring-boot-starter-data-jpa-test")

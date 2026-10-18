@@ -13,7 +13,7 @@ import jakarta.persistence.EntityManagerFactory;
 @Configuration
 public class TransactionItemWriter {
     @Bean
-    public ItemWriter<Transaction> transactionItemWriter(EntityManagerFactory entityManagerFactory) {
+    public ItemWriter<Transaction> transactionJpaItemWriter(EntityManagerFactory entityManagerFactory) {
         JpaItemWriterBuilder<Transaction> jpaItemWriter = new JpaItemWriterBuilder<>();
 
         return jpaItemWriter
